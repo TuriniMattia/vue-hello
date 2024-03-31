@@ -15,7 +15,11 @@
         }
       </script>
       
-      <div id="app">{{ message }}</div>
+      <div id="app">
+        <h1>
+            {{ message }}
+        </h1>
+      </div>
       
       <script type="module">
         import { createApp } from 'vue'
@@ -23,7 +27,7 @@
         createApp({
           data() {
             return {
-              message: 'Hello Vue!'
+              message: ' proviamo vue'
             }
           }
         }).mount('#app')
