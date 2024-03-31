@@ -16,3 +16,16 @@
  Con Composition API invece la logica viene definita usando API importate.
 
 # Template Syntax
+La sintassi  "Mustache" (baffi) è la forma base di cattura del testo, che consiste nell'uso delle doppie graffe <span>message : {{ msg}}</span>.
+Il tag mustache verrà sostituito con il valore della proprietà msg dell'istanza del componente corrispondente e verrà aggiornato ogni volta che la proprietà cambia.
+La  v-html directive serve per produrre HTML reale. Le direttive hanno il v- per indicare che sono attributi specifici di vue.
+I baffi non possono essere utilizzati all'interno di attributi HTML e di conseguenza va usato il v-bind.
+Vue supporta tutta la potenza delle espressioni JavaScript all'interno di tutte le associazioni di dati.
+Nei modelli Vue, le espressioni JavaScript possono essere utilizzate nelle seguenti posizioni:
+1. Interpolazioni del testo interno (baffi);
+2. Nel valore dell'attributo di qualsiasi direttiva Vue (attributi speciali che iniziano con v-).
+Il compito di una direttiva è applicare in modo reattivo gli aggiornamenti al DOM quando cambia il valore della sua espressione.
+Alcune direttive possono accettare un "argomento", indicato da due punti dopo il nome della direttiva. 
+È anche possibile utilizzare un'espressione JavaScript in un argomento direttivo racchiudendola tra parentesi quadre.
+È previsto che gli argomenti dinamici restituiscano una stringa, ad eccezione di null. Il valore speciale nullpuò essere utilizzato per rimuovere esplicitamente l'associazione.
+I modificatori sono suffissi speciali indicati da un punto, che indicano che una direttiva dovrebbe essere vincolata in qualche modo speciale. 
